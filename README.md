@@ -7,6 +7,7 @@ A solution for the COVID-19 pandemic forecast in India.
 ### Proposed Solution:
   
  [The dataset](FinalCovid19.csv) consists of the data that has been scraped off the web from websites which provide historical data on COVID-19 statistics. Each column from the dataset is treated as a series which is a function of time. The column of ```Total Confirmed cases``` is used for the initial analysis and the model has been applied over it for demonstration purposes. The algorithm is pretty much generalized and can be applied over any of the column from the dataset. The dataset consists of 99 samples, corresponding to 99 days that India has been fighting the COVID-19 pandemic. These samples are divided in a ratio of 8:2 for training set and testing set respectively.
+ 
 ![](Images/Dataset.png) 
 
 Various methods have been used for prediction of time series and the most promising till date has been the usage of RNNs. A Recurrent Neural Network is a class of Artificial Neural Networks where connections between nodes form a directed graph along a temporal sequence. This allows it to exhibit temporal dynamic behavior. Derived from feedforward neural networks, RNNs can use their internal state (memory) to process variable length sequences of inputs. *Source:*[Wikipedia](https://en.wikipedia.org/wiki/Recurrent_neural_network)
