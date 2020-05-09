@@ -23,7 +23,7 @@ To help the LSTM model to converge faster it is important to scale the data. It 
 ![](Images/model.png)
 We use Mean Square Error loss function and Adam optimizer. The learning rate is set to ```0.001``` and the decay is ```0.000005```. We train our model over 100 epochs and analyze the results using **Root Mean Squared Error** as a metric. 
 ![](Images/loss.png)
-As we can observe, the loss is a bit noisy but the model converges quickly. The following section summarizes the results for the network.
+As we can observe, it begins to overshoot, but the model converges quickly. The following section summarizes the results for the network.
 
 The training rmse is observed to be ```Training rmse : 0.0115```
 The model is then applied to a testing data of 19 samples. The testing rmse is found to be ```Testing rmse : 0.0322494```
