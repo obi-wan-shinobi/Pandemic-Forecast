@@ -20,7 +20,9 @@ Thus, this makes it a perfect candidate for our problem. RNNs use previous time 
 
 We implement our model using this LSTM and make predictions.
 To help the LSTM model to converge faster it is important to scale the data. It is possible that large values in the inputs slow down the learning. We use MinMaxScaling to scale the data between 0 to 1. After scaling we transform the data into a format that is appropriate for modeling with LSTM. We transform the long sequence of data into many shorter sequences (4 time bars per sequence) that are targeted to a single output. We train LSTM with 30 hidden units. A lower number of units is used so that it is less likely that LSTM would perfectly memorize the sequence. 
+
 ![](Images/model.png)
+
 We use Mean Square Error loss function and Adam optimizer. The learning rate is set to ```0.001``` and the decay is ```0.000005```. We train our model over 100 epochs and analyze the results using **Root Mean Squared Error** as a metric. 
 ![](Images/loss.png)
 As we can observe, it begins to overshoot, but the model converges quickly. The following section summarizes the results for the network.
