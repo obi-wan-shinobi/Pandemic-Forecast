@@ -25,7 +25,7 @@ To help the LSTM model to converge faster it is important to scale the data. It 
 
 ![](Images/model.png)
 
-Mean Square Error is used as a loss function along with Adam optimizer. The learning rate is set to ```0.001``` and the decay is ```0.000005```. The model is trained over 100 epochs and analyze the results using **Root Mean Squared Error** as a metric. 
+Mean Square Error is used as a loss function along with Adam optimizer. The learning rate is set to ```0.001``` and the decay is ```5e-4```. The model is trained over 100 epochs and analyze the results using **Root Mean Squared Error** as a metric. 
 
 ![](Images/loss.png)
 
